@@ -20,7 +20,7 @@
 ## INSTALLATION ON WINDOWS
 ### Installation
 <ul>
-<li> Download the vim file at the following <link href="https://www.vim.org/download.php">link</link>
+<li> Download the vim file at the following <a href="https://www.vim.org/download.php">link</a>
 </ul>
 
 ## Configuration
