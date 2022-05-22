@@ -26,8 +26,10 @@
 </ul>
 
 ### CONFIGURATION
+<ul>
 <li> first, you can directly download the .vimrc file above by cloning this repository or using wget </li>
 
 ```bash
 > wget https://raw.githubusercontent.com/efzynx/dotfiles/main/vim.conf/.vimrc
 ```
+</ul>
