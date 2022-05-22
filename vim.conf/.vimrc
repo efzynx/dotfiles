@@ -64,7 +64,6 @@ set nohlsearch
 set noswapfile
 set mouse=a 
 set t_Co=256
-"set cursorline
 set background=dark
 
 set shiftwidth=2
