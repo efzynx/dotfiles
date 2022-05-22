@@ -26,3 +26,9 @@
 </ul>
 
 ### CONFIGURATION
+<ul>
+<li> First, you can directly download the file above by copying the following link </li>
+```bash
+> https://raw.githubusercontent.com/efzynx/dotfiles/main/vim.conf/.vimrc
+```
+</ul>
