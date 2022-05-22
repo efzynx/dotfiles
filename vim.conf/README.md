@@ -46,7 +46,7 @@
 </ul>
 
 ### TQTO
-<p>Thank you and I hope this is useful and useful for all of you 😁</p>
+<p>Thank you and I hope this is useful for all of you 😁</p>
 
 ### &#x1F919; CONNECT WITH ME
 [![Facebook](https://img.shields.io/badge/Facebook-%234267B2.svg?&style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/Efzynn/)
