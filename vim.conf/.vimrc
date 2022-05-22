@@ -1,51 +1,119 @@
-" VIM PLUGINS HERE
+" ===============> PLUGIN <===============
 call plug#begin()
-Plug 'preservim/NERDTree'
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
+
+" Make sure you use single quotes
+
+" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
+Plug 'junegunn/vim-easy-align'
+
+" Any valid git URL is allowed
+Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
+" Multiple Plug commands can be written in a single line using | separators
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+
+" Using a non-default branch
+Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
+
+" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+Plug 'fatih/vim-go', { 'tag': '*' }
+
+" Plugin options
+Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Unmanaged plugin (manually installed and updated)
+Plug '~/my-prototype-plugin'
+
+" Initialize plugin system
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
-Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin.git'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'easymotion/vim-easymotion'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ryanoasis/vim-devicons'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'https://github.com/PhilRunninger/nerdtree-buffer-ops.git'
-Plug 'https://github.com/PhilRunninger/nerdtree-visual-selection.git'
-Plug 'https://github.com/mattn/emmet-vim.git'
-Plug 'neoclide/coc.nvim'
+Plug 'https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git'
+" emmet
+Plug 'mattn/emmet-vim'
 call plug#end()
 
-set number
+" ===============> GENERAL SETTINGS <=============== 
+set nu relativenumber 
+set autoindent
+set encoding=utf-8
+set expandtab
+set exrc
+set hidden
+set incsearch
+set nobackup
+set noerrorbells
+set nohlsearch
+set noswapfile
+set mouse=a 
+set t_Co=256
+"set cursorline
+set background=dark
+
+set shiftwidth=2
+set smartindent
+set tabstop=2 softtabstop=2
 syntax on
-" Disable compatibility with vi which can cause unexpected issues.
-set nocompatible
-
-" Enable type file detection. Vim will be able to try to detect the type of file in use.
-filetype on
-
-" Enable plugins and load plugin for the detected file type.
-filetype plugin on
-
-" Load an indent file for the detected file type.
-filetype indent on
-
-" Highlight line horizontal
-" set cursorline
-
-" Highlight line vertical
-" set cursorcolumn
+" toggle to show and hide number
+nnoremap <F10> <CMD>set nonumber norelativenumber<CR>
+nnoremap <F10> <CMD>set nonumber! norelativenumber!<CR>
 
 
-" NERDTree
+" ===============> NERDTREE SETTINGS <===============
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+" Start NERDTree when Vim is started without file arguments.
+"autocmd StdinReadPre * let s:std_in=1 
+"autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif 
+ 
+" NERDTree git status
+" let g:NERDTreeGitStatusIndicatorMapCustom = {
+                \ 'Modified'  :'✹',
+                \ 'Staged'    :'✚',
+                \ 'Untracked' :'✭',
+                \ 'Renamed'   :'➜',
+                \ 'Unmerged'  :'═',
+                \ 'Deleted'   :'✖',
+                \ 'Dirty'     :'✗',
+                \ 'Ignored'   :'☒',
+                \ 'Clean'     :'✔︎',
+                \ 'Unknown'   :'?',
+                \ }
+let g:NERDTreeGitStatusUseNerdFonts = 1 " you should install nerdfonts by yourself. default: 0
+let g:NERDTreeGitStatusShowIgnored = 1 " a heavy feature may cost much more time. default: 0
 
-" NERDTree syntax higlight
-let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
-let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
+" ===============> VIM AIRLINE <===============
+" Enable tabline
+let g:airline#extensions#tabline#enabled = 1
+" If you user buffers, show buffer number
+ let g:airline#extensions#tabline#buffer_nr_show = 1
+" If you use tabs, show tab number
+let g:airline#extensions#tabline#tab_nr_type = 1
+" font airline
+let g:airline_powerline_fonts = 1
+nnoremap <C-l> :bnext<CR>
 
-" Set internal encoding of vim, not needed on neovim, since coc.nvim using some
-" unicode characters in the file autoload/float.vim
-set encoding=utf-8
 
+" ===============> COC CONFIGURATION <===============
 " TextEdit might fail if hidden is not set.
 set hidden
 
@@ -209,11 +277,32 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+" VIM-EASYMOTION
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+nmap s <Plug>(easymotion-overwin-f)
+" or
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+nmap s <Plug>(easymotion-overwin-f2)
+
+" Turn on case-insensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
 
 
-" EMMET
-let g:user_emmet_mode='n'    "only enable normal mode functions.
-let g:user_emmet_mode='inv'  "enable all functions, which is equal to
-let g:user_emmet_mode='a'    "enable all function in all mode.
-let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
+" ===============> NERDTree SYNTAX HIGHLIGHT <===============
+let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
+let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
+" HIGHLIGHT FULL NAME
+let g:NERDTreeFileExtensionHighlightFullName = 1
+let g:NERDTreeExactMatchHighlightFullName = 1
+let g:NERDTreePatternMatchHighlightFullName = 1
+" HIGHLIGHT FOLDERS USING EXACT MATCH
+let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
+let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
