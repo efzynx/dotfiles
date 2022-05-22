@@ -42,4 +42,8 @@
 <li> after that, install <a href="https://git-scm.com/downloads">git</a> and change the terminal font using the font from <a href="https://www.nerdfonts.com/font-downloads">nerdfont</a> to support the existing icons on nerdtree and vim-airline </li>
 <li> if everything is installed. please open terminal/cmd then open vim and type :PlugInstall then ENTER. the image below as an example </li>
 <img src="https://i.ibb.co/FnYt95y/ss-terminal.png" width="350px">
+<li> and done. your vim already has features like vscode </li>
 </ul>
+
+### TQTO
+<p>Thank you and I hope this is useful and useful for all of you U+1F601</p>
