@@ -46,4 +46,10 @@
 </ul>
 
 ### TQTO
-<p>Thank you and I hope this is useful and useful for all of you U+1F601</p>
+<p>Thank you and I hope this is useful and useful for all of you 😁</p>
+
+### &#x1F919; CONNECT WITH ME
+[![Facebook](https://img.shields.io/badge/Facebook-%234267B2.svg?&style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/Efzynn/)
+[![Telegram](https://img.shields.io/badge/Telegram-%230088cc.svg?&style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/efzynn)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/efzyn_)
+[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/6285156724122)
