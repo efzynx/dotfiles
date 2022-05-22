@@ -1,26 +1,28 @@
 <h1 align="center">VIM CONFIGURATION<br><img src="https://i.ibb.co/F3dgM7J/1022px-Vimlogo-svg.png" width="250px"></h1>
 
-## INSTALLATION ON LINUX
-### Arch based
+### INSTALLATION ON LINUX
+#### Arch based
 ```bash
 > sudo pacman -Syu
 > sudo pacman -Sy vim
 ```
-### Debian based
+#### Debian based
 ```bash
 > sudo apt update && apt upgrade
 > sudo apt install vim -y
 ```
-### Rpm based
+#### Rpm based
 ```bash 
 > su 
 > yum install vim
 ```
 
-## INSTALLATION ON WINDOWS
-### Installation
+### INSTALLATION ON WINDOWS
+#### Installation
 <ul>
-<li> Download the vim file at the following <a href="https://www.vim.org/download.php">link</a>
+<li> Download the vim file at the following <a href="https://www.vim.org/download.php">link</a></li>
+<li> download the file according to your windows version </li>
+<li> then install the .exe file as usual </li>
 </ul>
 
-## Configuration
+### CONFIGURATION
