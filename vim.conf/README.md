@@ -1,1 +1,1 @@
-<h1 align="center">VIM CONFIGURATION<img src="https://ibb.co/tK18tCc"></h1>
+<h1 align="center">VIM CONFIGURATION<img src="https://i.ibb.co/F3dgM7J/1022px-Vimlogo-svg.png"></h1>
