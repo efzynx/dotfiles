@@ -5,5 +5,6 @@
 <div align="center">
     <p>
         <img src="https://img.shields.io/github/license/efzynx/dotfiles">
+        <img src="https://img.shields.io/github/languages/code-size/efzynx/dotfiles">
     </p>
 </div>
