@@ -9,6 +9,7 @@
         <br>
         <img src="https://img.shields.io/github/forks/efzynx/dotfiles?style=social">
         <img src="https://img.shields.io/github/last-commit/efzynx/dotfiles?color=red">
+        <img src="https://img.shields.io/github/downloads/efzynx/dotfiles/total">
         <img src="https://img.shields.io/github/stars/efzynx/dotfiles?style=social">
     </p>
 </div>
