@@ -1,4 +1,4 @@
-<h6 align="center"><img src="https://i.ibb.co/LzZ5gRH/dotfiles-logo-icon.png" width="250px"><br>
+<p align="center"><img src="https://i.ibb.co/LzZ5gRH/dotfiles-logo-icon.png" width="250px"><br>
 
    ██████╗  ██████╗ ████████╗███████╗██╗██╗     ███████╗███████╗
    ██╔══██╗██╔═══██╗╚══██╔══╝██╔════╝██║██║     ██╔════╝██╔════╝
@@ -8,4 +8,4 @@
 ╚═╝╚═════╝  ╚═════╝    ╚═╝   ╚═╝     ╚═╝╚══════╝╚══════╝╚══════╝
                                                                 
 
-</h6> 
+</p> 
