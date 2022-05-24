@@ -6,6 +6,6 @@
     <p>
         <img src="https://img.shields.io/github/license/efzynx/dotfiles">
         <img src="https://img.shields.io/github/languages/top/efzynx/dotfiles?color=green">
-        <img src="https://img.shields.io/github/languages/code-size/efzynx/dotfiles">
+        <img src="https://img.shields.io/github/languages/code-size/efzynx/dotfiles?color=green">
     </p>
 </div>
