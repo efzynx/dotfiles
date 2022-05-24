@@ -1,12 +1,1 @@
-<h6 align="center"><img src="https://i.ibb.co/LzZ5gRH/dotfiles-logo-icon.png" width="250px"><br>
-
-    _____   ____ _______ ______ _____ _      ______  _____ 
-   |  __ \ / __ \__   __|  ____|_   _| |    |  ____|/ ____|
-   | |  | | |  | | | |  | |__    | | | |    | |__  | (___  
-   | |  | | |  | | | |  |  __|   | | | |    |  __|  \___ \ 
-  _| |__| | |__| | | |  | |     _| |_| |____| |____ ____) |
- (_)_____/ \____/  |_|  |_|    |_____|______|______|_____/ 
-                                                           
-                                                           
-
-</h6> 
+<h6 align="center"><img src="https://i.ibb.co/LzZ5gRH/dotfiles-logo-icon.png" width="250px"><br><img src="https://i.ibb.co/ZYr76cZ/dotfilesicon.png" width="100px"></h6> 
