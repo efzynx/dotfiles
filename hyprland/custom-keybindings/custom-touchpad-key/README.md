@@ -1,6 +1,6 @@
-
-
 # Mengaktifkan/Menonaktifkan Touchpad di Arch Linux (Hyprland)
+
+[English version](https://github.com/efzynx/dotfiles/blob/main/hyprland/custom-keybindings/custom-touchpad-key/README-eng.md)
 
 Panduan ini menjelaskan cara membuat skrip _toggle_ sederhana dan mengikatnya ke pintasan keyboard atau tombol fungsi khusus di lingkungan Hyprland Wayland di Arch Linux.
 
