@@ -36,8 +36,8 @@ Langkah-langkah Konfigurasi
 
  - **Simpan dan terapkan perubahan**
  Simpan file konfigurasi dan keluar dari editor. Terapkan perubahan pada Hyprland tanpa perlu me-restart sesi Anda dengan menjalankan perintah berikut di terminal:
-
+    ```
      hyprctl reload
-     
+    ``` 
 	Atau, restart Hyprland Anda sepenuhnya.
 
