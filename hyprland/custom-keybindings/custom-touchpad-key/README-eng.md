@@ -33,9 +33,9 @@ You need to know the exact name of your touchpad to tell Hyprland which device t
 
 Open a terminal and run:
 
-hyprctl devices
+    hyprctl devices
 
-Use this code with caution.
+*Use this code with caution.*
 
 Look for the `mice:` or `touchpad:` section and note the full name of your device. For example: `elan1300:00-04f3:3087-touchpad`.
 
